@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>ch.epfl.cs107</groupId>
+    <artifactId>crypto-stegano-provided</artifactId>
+    <version>2024.1</version>
+
+    <properties>
+        <packager.version>0.1.0</packager.version>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>io.github.hamzaremmal</groupId>
+                <artifactId>cs107-submission-packager-maven-plugin</artifactId>
+                <version>${packager.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>package-submission</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
